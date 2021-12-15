@@ -1,11 +1,27 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './styles.scss'
-import api from '../../api'
+import api from '../../services/api'
 import Cards from '../components/Cards'
 import Legend from '../components/Legends'
 
 
 const Home = () => {
+    const [rainList, setRainList] = useState([])
+
+    const consumingAPI = async () => {
+        try {
+            const response = await api.get('rain/all')
+            setRainList(response.data)
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
+    useEffect(() => {
+        consumingAPI();
+    }, []);
+
+
     return (
         <>
             <div className='container-home'>
@@ -19,7 +35,7 @@ const Home = () => {
                         <option value="Patamares/SSA">Patamares/SSA</option>
                     </select>
                 </form>
-                <Cards api={api} />
+                <Cards api={rainList} />
                 <Legend />
             </div>
         </>

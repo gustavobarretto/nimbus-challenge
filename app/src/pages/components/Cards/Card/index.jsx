@@ -8,7 +8,7 @@ const Card = ({date, rainConditions, mm}) => {
     const coloringRain = (param) => {
         if(param < 0.2)
            return { color: '#77A238' }
-        if(param < 5)
+        if(param <= 5)
             return { color: '#2050B8'}
         if(param <= 25)
             return { color: '#A3813C' }
