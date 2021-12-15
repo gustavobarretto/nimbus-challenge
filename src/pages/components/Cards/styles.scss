@@ -1,0 +1,10 @@
+@import '../../../utilities.scss';
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 480px;
+    height: auto;
+    gap: 10px;
+}

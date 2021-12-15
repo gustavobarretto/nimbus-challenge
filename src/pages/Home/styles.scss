@@ -1,0 +1,40 @@
+@import '../../utilities.scss';
+
+.container-home {
+    // Dimensions
+    width: 100vw;
+    height: 100vh;
+
+    // Alocations
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.title-home {
+    color: $primary-text-color;
+}
+
+.label-district {
+    color: $primary-text-color;
+}
+
+.select-district {
+    outline: none;
+    outline-style: none;
+    background-color: transparent;
+    background: $primary-color;
+    
+    padding: 5px;
+    text-align: center;
+    color: $primary-text-color;
+    border: $primary-text-color 1px solid;
+    border-radius: 10px;
+
+    
+
+}
+
+// Terminar de fatorar os options do select.

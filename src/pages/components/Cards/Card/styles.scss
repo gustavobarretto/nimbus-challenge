@@ -1,0 +1,16 @@
+@import '../../../../utilities.scss';
+
+.card-container {
+    border: $primary-text-color solid 1px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    
+}
+
+.card-date {
+    color: $primary-text-color;
+}
+
+.card-rain {
+    font-weight: 600;
+}
