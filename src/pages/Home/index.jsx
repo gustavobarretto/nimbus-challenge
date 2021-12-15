@@ -11,7 +11,7 @@ const Home = () => {
             <div className='container-home'>
                 <h1 className='title-home'>Previsão de Chuva Horária</h1>
                 <form className='district-form'>
-                    <label className='label-district' htmlFor="districts">Bairro: </label>
+                    <label className='label-district' htmlFor="districts"><h4>Bairro: </h4></label>
                     <select className='select-district' id="districts" name="districts">
                         <option value="Pituba/SSA">Pituba/SSA</option>
                         <option value="Itapuã/SSA">Itapuã/SSA</option>

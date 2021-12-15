@@ -2,15 +2,22 @@
 
 .card-container {
     border: $primary-text-color solid 1px;
-    border-radius: 10px;
-    padding: 10px 20px;
+    border-radius: 15px;
+    padding: 15px 0 15px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     
 }
 
 .card-date {
     color: $primary-text-color;
+    
 }
 
 .card-rain {
     font-weight: 600;
+
 }
+

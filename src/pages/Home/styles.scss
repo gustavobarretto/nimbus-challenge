@@ -17,14 +17,24 @@
     color: $primary-text-color;
 }
 
+.district-form {
+    display: flex;
+
+    gap: 10px;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .label-district {
     color: $primary-text-color;
+    
 }
 
 .select-district {
     outline: none;
     outline-style: none;
-    background-color: transparent;
     background: $primary-color;
     
     padding: 5px;
