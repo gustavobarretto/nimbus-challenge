@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 2.2rem;
 }
 
 .title-home {
@@ -20,7 +20,7 @@
 .district-form {
     display: flex;
 
-    gap: 10px;
+    gap: .6rem;
     
     justify-content: center;
     align-items: center;
@@ -37,14 +37,10 @@
     outline-style: none;
     background: $primary-color;
     
-    padding: 5px;
+    padding: .3rem;
     text-align: center;
     color: $primary-text-color;
     border: $primary-text-color 1px solid;
-    border-radius: 10px;
-
-    
+    border-radius: .6rem;
 
 }
-
-// Terminar de fatorar os options do select.

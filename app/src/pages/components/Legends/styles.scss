@@ -3,8 +3,8 @@
 .container-legend {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 480px;
+    gap: .5rem;
+    width: 30rem;
     height: auto;
 }
 
@@ -22,7 +22,7 @@
 
 .legend-box {
     display: flex;
-    gap: 5px;
+    gap: .5rem;
 }
 
 .legend-rain {
