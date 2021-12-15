@@ -14,7 +14,6 @@ const Card = ({date, rainConditions, mm}) => {
             return { color: '#A3813C' }
         if(param > 25)
             return { color: '#BE3E3D'}
-
     }
 
     return ( 
