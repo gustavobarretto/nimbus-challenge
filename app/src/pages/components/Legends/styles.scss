@@ -33,3 +33,17 @@
     color: $primary-text-color
 }
 
+@media (max-width: 720px) {
+    .container-legend {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .legend-text {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+

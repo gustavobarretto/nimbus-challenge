@@ -1,5 +1,5 @@
 const { Rain } = require('../services/rainStatus.ts')
-const { DATA } = require('../fakedb/data')
+const { DATA } = require('../database/data')
 
 // Rain Controller
 const areAllFieldsValid = (body) => {
@@ -39,7 +39,11 @@ const rainPostController = (req, res) => {
 }
 
 const rainGetController = (req, res) => {
-    res.json(DATA.rains)
+    const [rainsList] = DATA.filter( location => {
+        return location.neighbourhood === req.params.neighbourhood;
+    })
+
+    res.json(rainsList.rains)
 }
 
 module.exports = {

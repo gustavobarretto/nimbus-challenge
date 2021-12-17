@@ -2,8 +2,8 @@
 
 .container-home {
     // Dimensions
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
 
     // Alocations
     display: flex;
@@ -14,7 +14,12 @@
 }
 
 .title-home {
+    margin-top: 30px;
     color: $primary-text-color;
+
+    @media (max-width: 420px) {
+        text-align: center;
+    }
 }
 
 .district-form {
@@ -43,4 +48,17 @@
     border: $primary-text-color 1px solid;
     border-radius: .6rem;
 
+}
+
+.container-cards-legends {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    
+    @media (max-width: 720px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }

@@ -4,9 +4,10 @@ const bodyParser = require('body-parser').json();
 const { checkBodyRain, rainPostController, rainGetController } = require('../controllers/controller')
 
 //Routes
+
 //Post
-routes.post('/rain/add', checkBodyRain, bodyParser, rainPostController)
+routes.post('/rains/', checkBodyRain, bodyParser, rainPostController)
 // Get
-routes.get('/rain/all', rainGetController)
+routes.get('/rains/:neighbourhood', rainGetController)
 
 module.exports = routes

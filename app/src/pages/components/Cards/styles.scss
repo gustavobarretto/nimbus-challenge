@@ -7,4 +7,17 @@
     width: 32.5rem;
     height: auto;
     gap: .6rem;
+    
+    @media (max-width: 720px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        @media (max-width: 420px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            
+            justify-items: center;
+            align-content: center;
+        }
+    }
 }
