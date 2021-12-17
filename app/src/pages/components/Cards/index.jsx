@@ -7,13 +7,13 @@ const Cards = ({api}) => {
     return ( 
         <>
             <div className='container-cards'>
-                {api.map( ({mm, dateHour, rainStatus}, idx) => {
+                {api.map( ({day, hour, rainType}, idx) => {
                     return (
                         <Card
                             key={idx} 
-                            date={dateHour}
-                            rainConditions={rainStatus}
-                            mm={mm}
+                            date={day}
+                            hour={hour}
+                            rainConditions={rainType}
                         />
                     )
                 })}            
