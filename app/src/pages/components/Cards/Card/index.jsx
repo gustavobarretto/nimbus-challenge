@@ -9,9 +9,7 @@ const Card = ({date, hour, rainConditions}) => {
             <div className='card-container'>
                 <p className='card-date'>{date} - {hour}</p>
                 <p className='card-rain' style={rainConditions.style}>{rainConditions.type}</p>
-
             </div>
-
         </>
      );
 }

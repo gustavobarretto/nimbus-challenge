@@ -15,13 +15,6 @@ CREATE TABLE IF NOT EXISTS forecasts (
   FOREIGN KEY(neighbourhood_id) REFERENCES neighbourhoods(id)
 );
 
-INSERT INTO neighbourhoods (name)
-VALUES
-('Pituba'),
-('Patamares'),
-('Patamares'),
-('Piatã'),
-('Barra');
 
 
 

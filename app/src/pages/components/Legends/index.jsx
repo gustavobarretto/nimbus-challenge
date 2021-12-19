@@ -33,12 +33,13 @@ const Legends = () => {
                 <div className='legend-text'>
                     {legendText.map( ({rain, mm, color}, idx) => {
                         return (
-                            <>
+                            
+                            <React.Fragment key={idx}>
                                 <div className='legend-box'>
                                     <p className='legend-rain' style={color}>{rain}</p>                                    
                                     <p className='legend-mm'>- {mm}</p>
                                 </div>
-                            </>
+                            </React.Fragment>
                         )
                     })}
 

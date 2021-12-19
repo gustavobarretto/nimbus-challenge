@@ -7,14 +7,11 @@ import Legends from '../components/Legends'
 
 const Home = () => {
     const [rainList, setRainList] = useState([])
-    const [neighbourhoodSelected, setNeighbourhoodSelected] = useState([])
 
     const treatingDateAndHour = (ts) => {
-        const arr = ts.split('T');
-
-        const dayInfo = arr[0].split('-').reverse().join('/').split('').splice(0, 5).join('');
-        const hourInfo = arr[1].split('').splice(0, 5).join('').replace(':', 'h');
-
+        const [day, hour] = ts.split('T');
+        const dayInfo = day.slice(5, 10).split('-').reverse().join('/')
+        const hourInfo = hour.slice(0, 2) + 'h';
         return { day: dayInfo, hour: hourInfo}
     }
 
@@ -30,7 +27,6 @@ const Home = () => {
     }
 
     const consumingAPI = async (params) => {
-        console.log(params)
         try {
             const response = await api.get(`neighbourhoods/${params}`)
             const arr = response.data.weathers.map( ({ ts, mm }) => {
@@ -47,10 +43,6 @@ const Home = () => {
             console.log(err)
         }
     }
-
-    useEffect(() => {
-        consumingAPI();
-    }, [neighbourhoodSelected]);
 
     return (
         <>
