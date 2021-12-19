@@ -9,8 +9,4 @@ router.post('/neighbourhoods', NeighbourhoodController.store);
 // Get
 router.get('/neighbourhoods/:name', NeighbourhoodController.show);
 
-router.get('/', (req, res) => {
-  res.json('FUNCIONEI');
-});
-
 module.exports = router;
