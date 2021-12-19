@@ -1,4 +1,5 @@
 const { Promise } = require('bluebird');
+
 const ForecastRepository = require('../repositories/ForecastRepository');
 const NeighbourhoodRepository = require('../repositories/NeighbourhoodRepository');
 

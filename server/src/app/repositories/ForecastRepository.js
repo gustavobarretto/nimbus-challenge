@@ -1,4 +1,4 @@
-const db = require('../database');
+const db = require('../../database');
 
 class ForecastRepository {
   async findByNeighbourhood(id) {
@@ -14,6 +14,6 @@ class ForecastRepository {
     `, [ts, mm, id]);
     return row;
   }
-};
+}
 
 module.exports = new ForecastRepository();
