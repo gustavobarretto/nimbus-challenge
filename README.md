@@ -35,7 +35,7 @@ $ npm start
 
 ![image](https://cdn.discordapp.com/attachments/869979419643637783/922188143304777849/unknown.png)
 
-O servidor está no heroku, sob o domínio https://nimbus-back-end-app.herokuapp.com/.
+O servidor está no heroku, sob o domínio https://nimbus-back-end-app.herokuapp.com/ e com bando de dados relacional PostgreSQL.
 
 Só foram criados o POST para criação do bairro e das previsões e o GET por bairro. É possível fazer consulta pelo navegador dos seguintes endereços:
 * https://nimbus-back-end-app.herokuapp.com/neighbourhoods/Pituba 
